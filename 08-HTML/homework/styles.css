@@ -1,0 +1,19 @@
+#thirDiv {
+    height: 600px;
+    width: 500px;
+    background-color: rgb(182, 114, 24);
+    padding: 50px;
+    border-color: rgb(68, 40, 112);
+    border-width: 5px;
+    border-style: dotted;
+}
+#spanId {
+    font-size: 18px;
+    margin: 50px;
+  }
+h1{
+    color:rgb(112, 127, 146);
+}
+img{
+    width: 100px;
+}
