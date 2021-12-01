@@ -1,7 +1,12 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-align: border-box;
+    box-sizing: border-box;
+}
 #thirDiv {
     height: 600px;
     width: 500px;
-    background-color: rgb(182, 114, 24);
+    background-color: rgb(162, 240, 169);
     padding: 50px;
     border-color: rgb(68, 40, 112);
     border-width: 5px;
@@ -10,6 +15,8 @@
 #spanId {
     font-size: 18px;
     margin: 50px;
+   /* margin-left: auto;
+    margin-right: auto;*/
   }
 h1{
     color:rgb(112, 127, 146);
@@ -17,3 +24,34 @@ h1{
 img{
     width: 100px;
 }
+div{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.divClass{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    font-size: 30px;
+    list-style-position: inside;
+    list-style-type: none;
+}
+il{
+
+    padding-left: 2rem;
+    background-image: url(./gatito.jpg);
+    background-position: 0 0;
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+}
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: rgb(240, 9, 9);
+  }
