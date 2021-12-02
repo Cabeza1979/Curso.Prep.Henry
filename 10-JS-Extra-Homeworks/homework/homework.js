@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const gitRemoteOriginUrl = require("git-remote-origin-url")
+
 function deObjetoAmatriz(objeto){
   // Escribe una función que convierta un objeto en una matriz, donde cada elemento representa 
   // un par clave-valor en forma de matriz.
@@ -70,13 +72,29 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
-}
+  let cadena= numero.toString();
+  let cadenaInvertida = "";
+	
+  cadenaInvertida = cadena.split("").reverse().join("");
+	if(cadena == cadenaInvertida){
+        return "Es capicua"
+  }
+  return "No es capicua"
 
+}
 
 function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  
+  cadena2=''
+  
+    cadena2=cadena.replace(/a/gi, '')
+    cadena2=cadena2.replace(/b/gi,'')
+    cadena2=cadena2.replace(/c/gi,'')
+    return cadena2
+  
 }
 
 
@@ -84,7 +102,18 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  for (let i = 0; i < arr.length; i ++ ){
+    var temp = arr[i]
+    var j = i - 1
+    while (j >= 0 && temp.length < arr[j].length) {
+        arr[j+1] = arr[j]
+        j--
+    }
+    arr[j+1] = temp
 }
+  return arr;
+}  
+
 
 
 function buscoInterseccion(arreglo1, arreglo2){
@@ -93,6 +122,15 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+var array=[]
+for(let i=0; i<arreglo1.length; i++){
+  for(let j=0; j<arreglo2.length; j++){
+    if(arreglo1[i]===arreglo2[j]){
+      array.push(arreglo1[i])
+    }
+  }
+}
+return array
 }
 
 
