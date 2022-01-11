@@ -7,7 +7,7 @@
 
 
 // Crea una variable booleana:
-;
+
 
 // Resuelve el siguiente problema matemático:
 
